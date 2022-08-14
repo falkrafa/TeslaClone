@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+.menu-bg {
+  background-image: url(./images/tesla-bg3.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 auto;
+  padding: 10px 30px 0;
+}
+header img {
+  width: 135px;
+}
+.nav ul {
+  display: flex;
+}
+.nav ul li {
+  list-style: none;
+}
+.nav a {
+  color: black;
+  text-decoration: none;
+  transition: all 300ms ease-in-out;
+  padding: 5px 15px;
+}
+.nav a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.menu-text {
+  text-align: center;
+  color: #171a20;
+  padding: 1px;
+}
+.menu-text h1 {
+  margin-top: 100px;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.menu-text p {
+  padding: 8px;
+}
+.menu-text a {
+  color: #171a20;
+  text-decoration: none;
+  border-bottom: 1.5px solid #171a20;
+  transition: all 150ms ease-in-out;
+}
+.menu-text a:hover {
+  border-bottom: 2px solid #171a20;
+}
+
+.btn {
+  display: flex;
+  margin-top: 65vh;
+  justify-content: center;
+}
+
+.btn a {
+  display: inline-block;
+  padding: 10px 50px;
+  color: white;
+  border-radius: 20px;
+  background: transparent;
+  border: 2px solid white;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: all 500ms ease-in-out;
+}
+.btn a:hover {
+  background-color: white;
+  color: black;
+}
+.bg-2 {
+  background-image: url(./images/teslabg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+.bg-3 {
+  background-image: url(./images/model-s.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+.bg-4 {
+  background-image: url(./images/model-x.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+.bg-5 {
+  background-image: url(./images/solar-p.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+.bg-6 {
+  background-image: url(./images/solar-roof.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.bg-6 div a {
+  color: black;
+  border-color: black;
+}
+.bg-6 div a:hover {
+  color: white;
+  background-color: black;
+}
+
+.fade {
+  animation: fadeIn 4s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
