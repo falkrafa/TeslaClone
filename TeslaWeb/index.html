@@ -18,7 +18,7 @@
       <header class="header">
         <img src="./images/black-logo.svg" alt="tesla logo" />
         <div class="nav">
-          <ul>
+          <ul class="nav-menu">
             <li><a href="#model-s">Model S</a></li>
             <li><a href="#model-3">Model 3</a></li>
             <li><a href="#model-x">Model X</a></li>
@@ -28,11 +28,14 @@
           </ul>
         </div>
         <div class="nav">
-          <ul>
+          <ul class="nav-menu">
             <li><a href="#">Shop</a></li>
             <li><a href="#">Account</a></li>
             <li><a href="#">Menu</a></li>
           </ul>
+        </div>
+        <div class="hamburger">
+          <span class="bar">Menu</span>
         </div>
       </header>
       <div class="menu-text fade">
@@ -94,5 +97,23 @@
         <a href="#">Existing Inventory</a>
       </div>
     </section>
+    <section class="bg-7">
+      <div class="menu-text fade">
+        <h1>Wall connector</h1>
+        <p>The fastest way to charge at home</p>
+      </div>
+      <div class="btn fade">
+        <a href="#">Shop Now</a>
+      </div>
+    </section>
+    <script>
+      const hamburger = document.querySelector('.hamburger');
+      const navMenu = document.querySelector('.nav-menu');
+
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+      });
+    </script>
   </body>
 </html>

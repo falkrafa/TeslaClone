@@ -10,7 +10,7 @@ body {
 }
 .menu-bg {
   background-image: url(./images/tesla-bg3.png);
-  background-position: center;
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   min-width: 100vw;
@@ -95,7 +95,7 @@ header img {
 }
 .bg-2 {
   background-image: url(./images/teslabg.jpg);
-  background-position: center;
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   min-width: 100vw;
@@ -103,7 +103,7 @@ header img {
 }
 .bg-3 {
   background-image: url(./images/model-s.jpg);
-  background-position: center;
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   min-width: 100vw;
@@ -111,7 +111,7 @@ header img {
 }
 .bg-4 {
   background-image: url(./images/model-x.jpeg);
-  background-position: center;
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   min-width: 100vw;
@@ -119,7 +119,7 @@ header img {
 }
 .bg-5 {
   background-image: url(./images/solar-p.jpg);
-  background-position: center;
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   min-width: 100vw;
@@ -127,7 +127,7 @@ header img {
 }
 .bg-6 {
   background-image: url(./images/solar-roof.jpeg);
-  background-position: center;
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   min-width: 100vw;
@@ -142,7 +142,27 @@ header img {
   color: white;
   background-color: black;
 }
-
+.bg-7 {
+  background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/35876dbc-0350-4ebc-af22-f85076c44dd0/bvlatuR/std/0x0/35876dbc-0350-4ebc-af22-f85076c44dd0);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+.bg-7 h1 {
+  font-size: 28px;
+  color: white;
+}
+.bg-7 p {
+  font-size: 30px;
+  color: white;
+}
+.bg-7 div a {
+  border: 2px solid white;
+  color: white;
+  padding: 10px 80px;
+}
 .fade {
   animation: fadeIn 4s;
 }
@@ -152,5 +172,249 @@ header img {
   }
   to {
     opacity: 1;
+  }
+}
+.hamburger {
+  display: none;
+}
+.bar {
+  display: block;
+  color: black;
+  padding: 5px 8px;
+}
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+  .header {
+    padding: 0px 20px 0px 0px;
+    max-width: 100vw;
+  }
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    left: 100%;
+    font-size: 14px;
+    top: 0;
+    width: 100%;
+    padding-top: 70px;
+    transition: all 300ms ease-in;
+  }
+  .nav-menu li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 200px;
+  }
+  .nav-menu li a {
+    color: white;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    padding: 0 8px;
+    transition: all 300ms ease-in-out;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .hamburger:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0 8px;
+    border-radius: 10px;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(0px);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px);
+  }
+
+  .btn {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn a {
+    display: inline-block;
+    padding: 10px 50px;
+    color: white;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    text-decoration: none;
+    margin: 0px 0px 10px 0px;
+    transition: all 500ms ease-in-out;
+  }
+  .btn a:hover {
+    background-color: white;
+    color: black;
+  }
+}
+@media (max-width: 650px) {
+  body {
+    overflow-x: hidden;
+  }
+  .menu-bg {
+    background-image: url(./images/mobile/tesla-mob.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+  .bg-2 {
+    background-image: url(./images/mobile/tesla-mob2.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+  .bg-3 {
+    background-image: url(./images/mobile/model-s.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+  .bg-4 {
+    background-image: url(./images/model-x.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+  .bg-5 {
+    background-image: url(./images/solar-p.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+  .bg-6 {
+    background-image: url(./images/solar-roof.jpeg);
+    background-position: 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+  .bg-7 {
+    background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/35876dbc-0350-4ebc-af22-f85076c44dd0/bvlatuR/std/0x0/35876dbc-0350-4ebc-af22-f85076c44dd0);
+    background-position: 80%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+  .bg-7 h1 {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+  }
+  .bg-7 p {
+    text-align: center;
+    font-size: 21px;
+    color: white;
+  }
+  .header {
+    padding: 0px 20px 0px 0px;
+    max-width: 100vw;
+  }
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    left: 100%;
+    font-size: 14px;
+    top: 0;
+    width: 100%;
+    padding-top: 70px;
+    transition: all 0.3s ease-in-out;
+  }
+  .nav-menu li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 70px;
+  }
+  .nav-menu li a {
+    color: white;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    padding: 0 8px;
+    transition: all 300ms ease-in-out;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .hamburger:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0 8px;
+    border-radius: 10px;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(0px);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px);
+  }
+
+  .btn {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn a {
+    display: inline-block;
+    padding: 10px 50px;
+    color: white;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    text-decoration: none;
+    margin: 0px 0px 10px 0px;
+    transition: all 500ms ease-in-out;
+  }
+  .btn a:hover {
+    background-color: white;
+    color: black;
   }
 }
