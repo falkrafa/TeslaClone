@@ -8,6 +8,9 @@
 body {
   overflow-x: hidden;
 }
+.white-bg {
+  background-color: lightsteelblue;
+}
 .menu-bg {
   background-image: url(./images/tesla-bg3.png);
   background-position: center center;
@@ -166,6 +169,21 @@ header img {
   border: 2px solid white;
   color: white;
   padding: 10px 80px;
+}
+.footer {
+  text-align: center;
+  font-size: 16px;
+}
+.footer a {
+  color: black;
+}
+
+.heart {
+  color: red;
+}
+.footer p {
+  margin: 0;
+  padding: 15px;
 }
 .fade {
   animation: fadeIn 4s;
