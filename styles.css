@@ -200,7 +200,7 @@ header img {
   color: black;
   padding: 5px 8px;
 }
-@media (max-width: 800px) {
+@media (max-width: 999px) {
   body {
     overflow-x: hidden;
   }
@@ -434,88 +434,5 @@ header img {
   .btn a:hover {
     background-color: white;
     color: black;
-  }
-}
-@media (max-width: 1400px) {
-  body {
-    overflow-x: hidden;
-  }
-  .header {
-    padding: 0px 20px 0px 0px;
-    max-width: 100vw;
-  }
-  section {
-    min-width: 100vw;
-    min-height: 100vh;
-  }
-  #text-one h1 {
-    margin-top: 100px;
-  }
-
-  .menu-bg .btn {
-    display: flex;
-    flex-direction: row;
-    margin-top: 53vh;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .btn a {
-    display: inline-block;
-    padding: 10px 60px;
-    color: white;
-    border-radius: 20px;
-    background: transparent;
-    border: 2px solid white;
-    text-decoration: none;
-    margin: 0px 0px 0px 10px;
-    transition: all 500ms ease-in-out;
-  }
-  .btn a:hover {
-    background-color: white;
-    color: black;
-  }
-  #text-two h1 {
-    margin-top: 70px;
-  }
-  .bg-2 .btn {
-    display: flex;
-    flex-direction: row;
-    margin-top: 64vh;
-    justify-content: center;
-    align-items: center;
-  }
-  .bg-3 .btn {
-    display: flex;
-    flex-direction: row;
-    margin-top: 59vh;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #text-four h1 {
-    margin-top: 77px;
-  }
-  .bg-5 .btn {
-    display: flex;
-    flex-direction: row;
-    margin-top: 53vh;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .bg-6 .btn {
-    display: flex;
-    flex-direction: row;
-    margin-top: 53vh;
-    justify-content: center;
-    align-items: center;
-  }
-  .bg-7 .btn {
-    display: flex;
-    flex-direction: row;
-    margin-top: 53vh;
-    justify-content: center;
-    align-items: center;
   }
 }
