@@ -16,6 +16,10 @@ body {
   min-width: 100vw;
   min-height: 100vh;
 }
+.color-back {
+  background-color: linen;
+  color: black;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -165,6 +169,21 @@ header img {
 }
 .fade {
   animation: fadeIn 4s;
+}
+.footer {
+  text-align: center;
+  font-size: 16px;
+}
+.footer a {
+  color: black;
+}
+
+.heart {
+  color: red;
+}
+.footer p {
+  margin: 0;
+  padding: 15px;
 }
 @keyframes fadeIn {
   from {
@@ -397,7 +416,7 @@ header img {
   .btn {
     display: flex;
     flex-direction: column;
-    margin-top: 56vh;
+    margin-top: 50vh;
     justify-content: center;
     align-items: center;
   }
